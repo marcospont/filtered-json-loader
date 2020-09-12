@@ -1,6 +1,6 @@
 {
   "name": "filtered-json-loader",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Webpack loader that applies filters on a JSON file",
   "keywords": [
     "webpack",
