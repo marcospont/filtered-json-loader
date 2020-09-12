@@ -1,6 +1,6 @@
 {
   "name": "filtered-json-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Webpack loader that applies filters on a JSON file",
   "keywords": [
     "webpack",
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/marcospont/filtered-json-loader/issues"
   },
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "engines": {
     "node": ">=10.16.0",
     "npm": ">=6.9.0"
