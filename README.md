@@ -1,8 +1,8 @@
 # filtered-json-loader
 
-> The filtered JSON loader allows you to apply filters on contents loaded from JSON files.
+The filtered JSON loader allows you to apply filters on contents loaded from JSON files.
 
-> The main benefit of filtering JSON content is to load only the necessary properties, thus producing a smaller output file.
+The main benefit of filtering JSON content is to load only the necessary properties, thus producing a smaller output file.
 
 ## Install
 
