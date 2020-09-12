@@ -1,6 +1,6 @@
 {
   "name": "filtered-json-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Webpack loader that applies filters on a JSON file",
   "keywords": [
     "webpack",
@@ -31,6 +31,9 @@
     "build": "cross-env NODE_ENV=production babel src -d dist --copy-files",
     "test": "cross-env NODE_ENV=test jest"
   },
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "webpack": "^4.0.0 || ^5.0.0"
   },
