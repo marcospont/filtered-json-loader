@@ -1,0 +1,45 @@
+{
+	"type": "object",
+	"properties": {
+		"accept": {
+			"anyOf": [
+				{
+					"instanceof": "RegExp"
+				},
+				{
+					"type": "string",
+					"minLength": 1
+				},
+				{
+					"type": "array",
+					"minItens": 1,
+					"items": {
+						"type": "string",
+						"minLength": 1
+					}
+				}
+			]
+		},
+		"deny": {
+			"anyOf": [
+				{
+					"instanceof": "RegExp"
+				},
+				{
+					"type": "string",
+					"minLength": 1
+				},
+				{
+					"type": "array",
+					"minItens": 1,
+					"items": {
+						"type": "string",
+						"minLength": 1
+					}
+				}
+			]
+		}
+	},
+	"additionalProperties": false,
+	"anyOf": [{ "required": ["accept"] }, { "required": ["deny"] }]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "filtered-json-loader",
+  "version": "1.0.0",
+  "description": "Webpack loader that applies filters on a JSON file",
+  "main": "src/index.js",
+  "scripts": {
+	"clean": "rimraf dist",
+	"prebuild": "npm run clean",
+	"build": "cross-env NODE_ENV=production babel src -d dist --copy-files",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcospont/filtered-json-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "json",
+    "filtered",
+    "bundler",
+    "javascript"
+  ],
+  "author": "Marcos Pont <marcos.pont@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcospont/filtered-json-loader/issues"
+  },
+  "homepage": "https://github.com/marcospont/filtered-json-loader#readme",
+  "engines": {
+    "node": ">=10.16.0",
+    "npm": ">=6.9.0"
+  },
+  "dependencies": {
+    "loader-utils": "^2.0.0",
+    "lodash": "^4.17.20",
+    "schema-utils": "^2.7.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
+    "jest": "^26.4.2",
+    "memfs": "^3.2.0",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.44.1"
+  }
+}

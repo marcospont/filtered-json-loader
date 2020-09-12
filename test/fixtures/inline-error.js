@@ -1,0 +1,1 @@
+require('../../src/index.js?unknown!./sample1.json');
