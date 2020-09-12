@@ -1,4 +1,4 @@
-# filtered-json-loader
+# filtered-json-loader [![Build Status](https://travis-ci.org/marcospont/filtered-json-loader.svg?branch=master)](https://travis-ci.org/marcospont/filtered-json-loader)
 
 The filtered JSON loader allows you to apply filters on contents loaded from JSON files.
 
