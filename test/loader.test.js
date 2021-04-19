@@ -6,7 +6,7 @@ describe('Filtered JSON Loader', () => {
 
 		expect(() => {
 			compiler = getCompiler('sample1.json', false);
-		}).toThrow('configuration.module.rules[0].use should be one of these');
+		}).toThrow('configuration.module.rules[0] should be one of these');
 	});
 	it('options should contain the accept and/or the deny properties', async() => {
 		const compiler = getCompiler('sample1.json', {});

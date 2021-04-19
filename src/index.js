@@ -1,5 +1,5 @@
 import { getOptions } from 'loader-utils';
-import validateOptions from 'schema-utils';
+import { validate } from 'schema-utils';
 import isPlainObject from 'lodash/isPlainObject';
 import isUndefined from 'lodash/isUndefined';
 
@@ -8,7 +8,7 @@ import schema from './options.json';
 export default function loader(source) {
 	const options = getOptions(this);
 
-	validateOptions(schema, options, {
+	validate(schema, options, {
 		name: "Filtered JSON Loader",
 		baseDataPath: "options"
 	});
